@@ -1,7 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head><title>My First Site</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhavana | Portfolio</title>
+  <style>
+    /* ===== Colors: change these to restyle the whole site ===== */
+    :root {
+      --bg: #f7f9fc;
+      --text: #1d2433;
+      --accent: #2f5bd8;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+    header { padding: 64px 0 32px; }
+    h1 { font-size: 2.4rem; line-height: 1.2; }
+    .role { color: var(--accent); font-size: 1.15rem; margin-top: 6px; }
+    section { padding: 24px 0; }
+    h2 { font-size: 1.3rem; margin-bottom: 10px; }
+    .card {
+      background: var(--card);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .skills { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills li { background: var(--card); border: 1px solid #d5dbe8; padding: 4px 12px; border-radius: 20px; }
+    a { color: var(--accent); }
+    footer { padding: 32px 0 56px; }
+  </style>
+</head>
 <body>
-  <h1>Hello, my first website!</h1>
+  <div class="wrap">
+
+    <header>
+      <h1>Hi, I'm Bhavana</h1>
+      <p class="role">Aspiring Software Developer</p>
+    </header>
+
+    <section>
+      <h2>About me</h2>
+      <p>I am a final-year Computer Science student graduating in 2026. I enjoy building small, useful programs and websites, and I am looking for a fresher role where I can learn and grow.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>MySQL</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="card">
+        <strong>Online Examination Management System</strong>
+        <p>Built with Python and a database. Includes an admin panel to manage exams and results.</p>
+        <a href="https://github.com/sreebhva">View on GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="card">
+        <strong>Management / Operations Intern, Keerthi Agarbatti Works</strong>
+        <p>Studied batch processing, inventory tracking and distribution. Suggested ways to remove bottlenecks on the shop floor.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>Bachelor of Computer Science, Sri Vidya Mandir Arts &amp; Science College (2026)</p>
+    </section>
+
+    <footer>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/sreebhva">github.com/sreebhva</a></p>
+    </footer>
+
+  </div>
 </body>
 </html>
+
